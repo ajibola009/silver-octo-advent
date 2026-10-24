@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Catfish Farm | Farm-to-Table Quality</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;line-height:1.6;color:#333}
+.wrap{width:90%;max-width:1100px;margin:0 auto}
+section{padding:4rem 0}
+h2{text-align:center;font-size:2.2rem;margin-bottom:.5rem;color:#1a2c3a}
+.sub{text-align:center;margin-bottom:2.5rem;color:#555}
+header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.1);position:sticky;top:0;z-index:99}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.logo{font-size:1.6rem;font-weight:700;color:#1a2c3a}
+.logo span{color:#00a8ff}
+nav ul{display:flex;list-style:none;align-items:center}
+nav li{margin-left:1.8rem}
+nav a{text-decoration:none;color:#333;font-weight:600}
+nav a:hover{color:#00a8ff}
+.navbtn{background:#00a8ff;color:#fff!important;padding:.5rem 1rem;border-radius:5px}
+.hero{background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('https://images.unsplash.com/photo-1534043464124-3be32fe000c9?auto=format&fit=crop&w=1600&q=80') center/cover;color:#fff;text-align:center;padding:6rem 0}
+.hero h1{font-size:2.6rem;margin-bottom:1rem}
+.hero p{max-width:700px;margin:0 auto 2rem}
+.btn{display:inline-block;background:#00a8ff;color:#fff;padding:1rem 2rem;border:none;border-radius:5px;font:inherit;font-weight:600;text-decoration:none;cursor:pointer}
+.btn:hover{background:#0086cc}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+.grid2 img{width:100%;border-radius:10px}
+.light{background:#f4f8fb}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:2rem}
+.card{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,.06)}
+.card img{width:100%;height:190px;object-fit:cover}
+.card h3{padding:1rem 1rem .2rem;color:#1a2c3a}
+.card .price{padding:0 1rem .4rem;color:#00a8ff;font-weight:700}
+.card p:last-child{padding:0 1rem 1.4rem}
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;text-align:center}
+.feats h3{color:#1a2c3a;margin-bottom:.4rem}
+form{display:grid;grid-template-columns:1fr 1fr;gap:1rem;max-width:700px;margin:0 auto 1.2rem}
+input,select{padding:.85rem;border:1px solid #ccd6e0;border-radius:6px;font:inherit;background:#fff}
+input:focus,select:focus{outline:2px solid #00a8ff;border-color:transparent}
+form .btn{grid-column:1/-1}
+.note{text-align:center}
+.note a{color:#00a8ff;font-weight:600;text-decoration:none}
+.dark{background:#1a2c3a;color:#fff}
+.dark h2{color:#fff}
+.dark .sub{color:#ddd}
+.info{text-align:center;line-height:2}
+.info a{color:#00a8ff;text-decoration:none}
+footer{background:#111;color:#aaa;text-align:center;padding:1.5rem 0;font-size:.9rem}
+.burger{display:none;cursor:pointer}
+.burger div{width:25px;height:3px;background:#333;margin:5px}
+@media(max-width:768px){
+nav ul{position:absolute;right:0;top:64px;height:calc(100vh - 64px);background:#fff;flex-direction:column;width:65%;transform:translateX(100%);transition:.4s;padding-top:2rem}
+nav ul.open{transform:translateX(0)}
+nav li{margin:1.5rem 0}
+.burger{display:block}
+.grid2,form{grid-template-columns:1fr}
+.hero h1{font-size:2rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <div class="logo">Catfish<span>Farm</span></div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Our Fish</a></li>
+      <li><a href="#why">Why Us</a></li>
+      <li><a href="#order" class="navbtn">Order</a></li>
+    </ul>
+    <div class="burger"><div></div><div></div><div></div></div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <h1>Premium Farm-Raised Catfish, Delivered Fresh.</h1>
+    <p>From our ponds to your plate — healthy, great-tasting catfish raised with care, for your family or your restaurant.</p>
+    <a href="#order" class="btn">Order Fresh Catfish Today</a>
+  </div>
+</section>
+
+<section id="about" class="wrap">
+  <h2>Our Story</h2>
+  <div class="grid2">
+    <div>
+      <p>We are a dedicated catfish farm committed to sustainable aquaculture. Our mission is simple: give our community a reliable source of fresh, high-quality catfish.</p>
+      <br>
+      <p>We control every stage — from selecting the best fingerlings and monitoring water quality to the final harvest. That hands-on care gives you fish that is both delicious and responsibly farmed.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=800&q=80" alt="Catfish farm ponds">
+  </div>
+</section>
+
+<section id="products" class="light">
+  <div class="wrap">
+    <h2>Our Products &amp; Prices</h2>
+    <p class="sub">Prices per kilogram</p>
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1611175694989-4870fafa4494?auto=format&fit=crop&w=600&q=80" alt="Live catfish">
+        <h3>Live Catfish</h3>
+        <p class="price">₦3,500 / kg</p>
+        <p>For customers who prefer to prepare their fish fresh. Available in all sizes.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1534043464124-3be32fe000c9?auto=format&fit=crop&w=600&q=80" alt="Dressed catfish">
+        <h3>Freshly Dressed</h3>
+        <p class="price">₦4,500 / kg</p>
+        <p>Cleaned, gutted and ready to cook. Saves you time without losing freshness.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1626200419199-391ae4be7a41?auto=format&fit=crop&w=600&q=80" alt="Smoked catfish">
+        <h3>Smoked Catfish</h3>
+        <p class="price">₦7,000 / kg</p>
+        <p>Traditionally smoked for a rich, deep flavour. Ideal for soups, stews and sauces.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="wrap">
+  <h2>Why Choose Our Catfish?</h2>
+  <div class="feats">
+    <div><h3>🐟 Farm-to-Table Freshness</h3><p>We harvest to order, so you get the freshest fish possible.</p></div>
+    <div><h3>💧 Quality &amp; Care</h3><p>Clean, well-maintained ponds and a high-quality feed diet.</p></div>
+    <div><h3>🌱 Sustainable Practices</h3><p>Responsible farming that respects the environment and our community.</p></div>
+    <div><h3>🤝 Reliable Supply</h3><p>Small family orders or bulk restaurant supply — we deliver consistently.</p></div>
+  </div>
+</section>
+
+<section id="order" class="light">
+  <div class="wrap">
+    <h2>Place Your Order</h2>
+    <p class="sub">Fill this in and WhatsApp opens with your order ready to send.</p>
+    <form id="form">
+      <input id="n" placeholder="Your name" required>
+      <input id="p" type="tel" placeholder="Your phone number" required>
+      <select id="pr" required>
+        <option value="">Choose product</option>
+        <option>Live Catfish</option>
+        <option>Freshly Dressed Catfish</option>
+        <option>Smoked Catfish</option>
+      </select>
+      <input id="q" type="number" min="1" placeholder="Quantity (kg)" required>
+      <input id="ad" placeholder="Delivery address / town" required>
+      <button type="submit" class="btn">Send Order on WhatsApp</button>
+    </form>
+    <p class="note">Prefer to call? <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+  </div>
+</section>
+
+<section id="contact" class="dark">
+  <div class="wrap">
+    <h2>Get in Touch</h2>
+    <p class="sub">Orders, enquiries, or to schedule a farm visit.</p>
+    <div class="info">
+      <p><strong>📍 Farm:</strong> Your Farm Address, City, State</p>
+      <p><strong>📞 Phone:</strong> <a href="tel:+2348000000000">+234 800 000 0000</a></p>
+      <p><strong>✉️ Email:</strong> <a href="mailto:orders@yourcatfishfarm.com">orders@yourcatfishfarm.com</a></p>
+      <p><strong>🕒 Hours:</strong> Mon – Sat, 8:00 AM – 6:00 PM</p>
+    </div>
+  </div>
+</section>
+
+<footer>© 2025 Your Catfish Farm Name. All Rights Reserved.</footer>
+
+<script>
+// CHANGE THIS to your WhatsApp number: country code, no +, no spaces
+const WHATSAPP = "2348000000000";
+
+const burger = document.querySelector(".burger");
+const menu = document.querySelector("nav ul");
+burger.onclick = () => menu.classList.toggle("open");
+document.querySelectorAll("nav ul a").forEach(a => a.onclick = () => menu.classList.remove("open"));
+
+document.getElementById("form").onsubmit = function (e) {
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const msg = "Hello, I want to order:%0A%0AName: " + v("n") +
+              "%0APhone: " + v("p") + "%0AProduct: " + v("pr") +
+              "%0AQuantity: " + v("q") + " kg%0AAddress: " + v("ad");
+  window.open("https://wa.me/" + WHATSAPP + "?text=" + msg, "_blank");
+};
+</script>
+</body>
+</html>
